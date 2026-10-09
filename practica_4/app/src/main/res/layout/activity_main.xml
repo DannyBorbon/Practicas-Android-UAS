@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#0B0F19">
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:text="PRÁCTICA 4"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:textColor="#A5B4FC"
+            android:textColor="#3949AB"
             android:gravity="center"
             android:padding="8dp" />
 
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:text="Controles avanzados en Android"
             android:textSize="16sp"
-            android:textColor="#94A3B8"
+            android:textColor="#616161"
             android:gravity="center"
             android:paddingBottom="24dp" />
 
@@ -36,14 +36,15 @@
             android:text="1. Tipo de actividad"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9" />
+            android:textColor="#212121" />
 
         <Spinner
             android:id="@+id/spinnerActividad"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#818CF8" />
+            android:backgroundTint="#3949AB"
+            android:popupBackground="#FFFFFF" />
 
         <TextView
             android:layout_width="match_parent"
@@ -51,7 +52,7 @@
             android:text="2. Prioridad"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9" />
+            android:textColor="#212121" />
 
         <RadioGroup
             android:id="@+id/radioGroupPrioridad"
@@ -65,16 +66,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Baja"
-                android:textColor="#E2E8F0"
-                android:buttonTint="#818CF8" />
+                android:textColor="#212121"
+                android:buttonTint="#3949AB" />
 
             <RadioButton
                 android:id="@+id/radioMedia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Media"
-                android:textColor="#E2E8F0"
-                android:buttonTint="#818CF8"
+                android:textColor="#212121"
+                android:buttonTint="#3949AB"
                 android:checked="true" />
 
             <RadioButton
@@ -82,8 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Alta"
-                android:textColor="#E2E8F0"
-                android:buttonTint="#818CF8" />
+                android:textColor="#212121"
+                android:buttonTint="#3949AB" />
 
         </RadioGroup>
 
@@ -93,31 +94,31 @@
             android:text="3. Recursos necesarios"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9" />
+            android:textColor="#212121" />
 
         <CheckBox
             android:id="@+id/checkInternet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Acceso a Internet"
-            android:textColor="#E2E8F0"
-            android:buttonTint="#818CF8" />
+            android:textColor="#212121"
+            android:buttonTint="#3949AB" />
 
         <CheckBox
             android:id="@+id/checkComputadora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Computadora"
-            android:textColor="#E2E8F0"
-            android:buttonTint="#818CF8" />
+            android:textColor="#212121"
+            android:buttonTint="#3949AB" />
 
         <CheckBox
             android:id="@+id/checkMaterial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Material de apoyo"
-            android:textColor="#E2E8F0"
-            android:buttonTint="#818CF8" />
+            android:textColor="#212121"
+            android:buttonTint="#3949AB" />
 
         <TextView
             android:layout_width="match_parent"
@@ -125,7 +126,7 @@
             android:text="4. Notificaciones"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9"
+            android:textColor="#212121"
             android:layout_marginTop="12dp" />
 
         <Switch
@@ -133,8 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Activar notificaciones"
-            android:textColor="#E2E8F0"
-            android:buttonTint="#818CF8"
+            android:textColor="#212121"
             android:checked="true"
             android:padding="8dp" />
 
@@ -145,7 +145,7 @@
             android:text="5. Progreso: 50%"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9"
+            android:textColor="#212121"
             android:layout_marginTop="12dp" />
 
         <SeekBar
@@ -154,8 +154,8 @@
             android:layout_height="wrap_content"
             android:max="100"
             android:progress="50"
-            android:progressTint="#818CF8"
-            android:thumbTint="#A5B4FC" />
+            android:progressTint="#3949AB"
+            android:thumbTint="#3949AB" />
 
         <TextView
             android:layout_width="match_parent"
@@ -163,7 +163,7 @@
             android:text="6. Fecha de la actividad"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9"
+            android:textColor="#212121"
             android:layout_marginTop="16dp" />
 
         <DatePicker
@@ -173,7 +173,7 @@
             android:calendarViewShown="false"
             android:datePickerMode="spinner"
             android:spinnersShown="true"
-            android:background="#151C2C" />
+            android:background="#FFFFFF" />
 
         <TextView
             android:layout_width="match_parent"
@@ -181,7 +181,7 @@
             android:text="7. Hora de la actividad"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#F1F5F9"
+            android:textColor="#212121"
             android:layout_marginTop="16dp" />
 
         <TimePicker
@@ -189,7 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:timePickerMode="spinner"
-            android:background="#151C2C" />
+            android:background="#FFFFFF" />
 
         <Button
             android:id="@+id/btnProcesar"
@@ -198,7 +198,7 @@
             android:text="PROCESAR INFORMACIÓN"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:backgroundTint="#6366F1"
+            android:backgroundTint="#3949AB"
             android:layout_marginTop="20dp" />
 
         <TextView
@@ -207,7 +207,7 @@
             android:text="Resumen de la actividad"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#A5B4FC"
+            android:textColor="#3949AB"
             android:layout_marginTop="20dp" />
 
         <TextView
@@ -216,8 +216,8 @@
             android:layout_height="wrap_content"
             android:text="Completa el formulario y presiona el botón."
             android:textSize="15sp"
-            android:textColor="#E2E8F0"
-            android:background="#151C2C"
+            android:textColor="#212121"
+            android:background="#F1F5F9"
             android:padding="16dp"
             android:layout_marginBottom="24dp" />
 

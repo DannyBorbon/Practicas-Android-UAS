@@ -1,4 +1,3 @@
-
 package com.example.practica_4
 
 import android.os.Bundle
@@ -43,25 +42,23 @@ class MainActivity : AppCompatActivity() {
         inicializarControles()
         configurarSpinner()
         configurarEventos()
+
+        timePickerActividad.setIs24HourView(true)
     }
 
     private fun inicializarControles() {
         spinnerActividad = findViewById(R.id.spinnerActividad)
-        radioGroupPrioridad =
-            findViewById(R.id.radioGroupPrioridad)
+        radioGroupPrioridad = findViewById(R.id.radioGroupPrioridad)
 
         checkInternet = findViewById(R.id.checkInternet)
         checkComputadora = findViewById(R.id.checkComputadora)
         checkMaterial = findViewById(R.id.checkMaterial)
 
-        switchNotificaciones =
-            findViewById(R.id.switchNotificaciones)
+        switchNotificaciones = findViewById(R.id.switchNotificaciones)
 
         seekBarProgreso = findViewById(R.id.seekBarProgreso)
-        datePickerActividad =
-            findViewById(R.id.datePickerActividad)
-        timePickerActividad =
-            findViewById(R.id.timePickerActividad)
+        datePickerActividad = findViewById(R.id.datePickerActividad)
+        timePickerActividad = findViewById(R.id.timePickerActividad)
 
         textProgreso = findViewById(R.id.textProgreso)
         textResultado = findViewById(R.id.textResultado)
@@ -114,7 +111,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configurarEventos() {
-
         radioGroupPrioridad.setOnCheckedChangeListener {
                 _, checkedId ->
 
@@ -130,8 +126,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val listenerCheckBox =
-            CompoundButton.OnCheckedChangeListener {
-                    _, _ ->
+            CompoundButton.OnCheckedChangeListener { _, _ ->
 
                 val recursos = obtenerRecursos()
 
@@ -144,17 +139,9 @@ class MainActivity : AppCompatActivity() {
                             }
             }
 
-        checkInternet.setOnCheckedChangeListener(
-            listenerCheckBox
-        )
-
-        checkComputadora.setOnCheckedChangeListener(
-            listenerCheckBox
-        )
-
-        checkMaterial.setOnCheckedChangeListener(
-            listenerCheckBox
-        )
+        checkInternet.setOnCheckedChangeListener(listenerCheckBox)
+        checkComputadora.setOnCheckedChangeListener(listenerCheckBox)
+        checkMaterial.setOnCheckedChangeListener(listenerCheckBox)
 
         switchNotificaciones.setOnCheckedChangeListener {
                 _, activado ->
@@ -175,19 +162,14 @@ class MainActivity : AppCompatActivity() {
                     progress: Int,
                     fromUser: Boolean
                 ) {
-                    textProgreso.text =
-                        "5. Progreso: $progress%"
+                    textProgreso.text = "5. Progreso: $progress%"
                 }
 
-                override fun onStartTrackingTouch(
-                    seekBar: SeekBar?
-                ) {
+                override fun onStartTrackingTouch(seekBar: SeekBar?) {
                     // El usuario comienza a mover el control.
                 }
 
-                override fun onStopTrackingTouch(
-                    seekBar: SeekBar?
-                ) {
+                override fun onStopTrackingTouch(seekBar: SeekBar?) {
                     // El usuario termina de mover el control.
                 }
             }
